@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+:root{
+    --color-um: #c1ddc7;
+    --color-dois: #f5e8c6;
+    --color-tres: #bbcd77;
+    --color-quatro: #dc8051;
+    --color-cinco: #f4d279;
+    --color-seis: #000;
+    --color-sete: #fff;
+}
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+    text-align: center;
+}
+
+body{
+    background-color: var(--color-dois);
+}
+header{
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #cac2c2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-quatro);
+}
+.nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--color-seis);
+    cursor: pointer;
+    background-color: var(--color-cinco);
+    border: 1px solid var(--color-seis);
+    padding: 5px 22px;
+    border-radius: 8px;
+    transition: tranform .5s;
+    transition: .5s;
+    font-family: 'Open sans', monospace, sans;
+}
+a:hover{
+    color: var(--color-seis);
+    transform: scale(1.1);
+    background-color: var(--color-tres);
+    color: var(--color-seis);
+}
+main{
+    margin: 0 auto;
+}
+.container-cta{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    background-image: url(img/4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+.first-cta{
+    height: 200px;
+    background-color: var(--color-tres);
+    border: 1px solid var(--color-seis);
+    border-radius: 10px; 
+    text-align: center;
+    margin: 0 200px;
+    box-shadow: 5px 5px 15px 5px var(--color-seis);
+}
+.first-cta p{
+    margin: 0 20px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 16px;
+}
+span{
+    color: var(--color-quatro);
+}
+.btn{
+    color: var(--color-sete);
+    cursor: pointer;
+    background-color: var(--color-cinco);
+    border: 1px solid var(--color-seis);
+    padding: 10px 40px;
+    border-radius: 8px;
+    transition: .5s;
+    color: var(--color-seis);
+}
+.btn:hover{
+    background-color: var(--color-sete);
+}
+.cards{
+    text-align: center;
+    display: flex;
+    margin: 40px;
+}
+.card{
+    margin-left: 20px;
+    border: 1px solid var(--color-seis);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--color-tres);
+    transition: transform .5s;
+    transition: .5s;
+    box-shadow: 5px 5px 10px 5px var(--color-seis);
+    /* height: 200px; */
+}
+.card h2{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+.card p{
+    font-size: 12px;
+    font-weight: normal;
+    text-indent: 20px;
+    text-align: justify;
+}
+.card i{
+    font-size: 25px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.sobre-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 45px 0;
+}
+.sobre{
+    max-width: 1300px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.sobre p{
+    text-align: justify;
+    text-indent: 20px;
+    max-width: 800px;
+    font-size: 16px;
+}
+.sobre i{
+    max-width: 100px;
+    font-size: 20px;
+    color: rgba(14, 223, 42, 0.753);
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.sobre-motorista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 200px;
+    align-items: center;
+    text-indent: 20px;
+    flex-wrap: wrap;
+    
+}
+.sobre-motorista p{
+    margin: 0 20px;
+    text-align: justify;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+.sobre-motorista:nth-child(even) article{
+    order: 2;
+}
+.title-sobre-mototista{
+    text-align: center;
+}
+.sobre-motorista img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px 5px var(--color-seis);
+}
+.cont-sobre{
+    width: 600px;
+}
+#cidades{
+    display: grid;
+    margin-top: 70px;
+    grid-template-areas: 
+    'title-cidades title-cidades title-cidades title-cidades'
+    'bandeiras-1 bandeiras-2 bandeiras-3 bandeiras-4'
+    'bandeiras-5 bandeiras-6 bandeiras-7 bandeiras-8';
+    gap: 20px;
+    /* background-color: #1411113a; */
+    background-image: url(img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 25px;
+    color: var(--color-sete);
+}
+#cidades h1{
+    background-color: var(--color-quatro);
+    color: var(--color-seis);
+}
+#title-cidades{
+    grid-area: title-cidades;
+}
+#bandeiras-1{
+    grid-area: bandeiras-1;
+}
+#bandeiras-2{
+    grid-area: bandeiras-2;
+}
+#bandeiras-3{
+    grid-area: bandeiras-3;
+}
+#bandeiras-4{
+    grid-area: bandeiras-4;
+}
+#bandeiras-5{
+    grid-area: bandeiras-5;
+}
+#bandeiras-6{
+    grid-area: bandeiras-6;
+}
+#bandeiras-7{
+    grid-area: bandeiras-7;
+}
+#bandeiras-8{
+    grid-area: bandeiras-8;
+}
+h3{
+    font-size: 14px;
+}
+#cidades img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform .5s;
+    transition: .5s;
+    filter: grayscale(100%);
+    box-shadow: 5px 5px 15px 5px var(--color-seis);
+}
+#cidades img:hover{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+footer{
+    background-color: var(--color-quatro);
+    padding: 40px 0;
+    margin: 2px 0 auto;
+}
+footer div{
+    display: flex;
+    width: 1100px;
+    margin: 10px auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer .img-footer{
+    width: 40px;
+    margin: 0 10px;
+}
+footer a{
+    background-color: var(--color-tres);
+    color: var(--color-seis);
+    padding: 10px 28px;
+}
+footer a:hover{
+    background-color: var(--color-cinco);
+}
